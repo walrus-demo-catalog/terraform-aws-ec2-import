@@ -14,8 +14,8 @@ variable "subnet_id" {
 }
 
 variable "vpc_security_group_ids" {
-  type        = string
-  description = "The VPC security group id of the EC2 instance"
+  type        = list
+  description = "The VPC security group ids of the EC2 instance"
 } 
 
 variable "instance_name" {
